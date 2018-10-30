@@ -9,6 +9,7 @@ export interface TransitionPropsBase {
   leaveActiveClass?: string;
   appearClass?: string;
   appearActiveClass?: string;
+  duration?: string | { enter: number, leave:number}
 
   onBeforeEnter?: (el: Element) => void;
   onEnter?: (el: Element, done: () => void) => void;
